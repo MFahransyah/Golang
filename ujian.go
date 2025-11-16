@@ -41,3 +41,27 @@ func Ujidua() {
 	delete(hargaBuah, "apel")
 	fmt.Println(hargaBuah)
 }
+
+func Ujitigahitungtotal(a int, b int) int {
+	return a + b
+}
+
+type mobil struct {
+	merk string
+	tahun int
+}
+
+func (m mobil) Ujiketigamethodinfo() {
+	fmt.Println("ini mobil", m.merk, "tahun", m.tahun)
+}
+
+func Ujiketigafinal() {
+	mobil1 := mobil{
+		merk: "nissan",
+		tahun: 1999,
+	}
+	mobil1.Ujiketigamethodinfo()
+
+	hasil := Ujitigahitungtotal(4, 3)
+	fmt.Println(hasil)
+}

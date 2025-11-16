@@ -173,6 +173,21 @@ func Kedelapan() {
 	fmt.Println("update umur budi", siswa1.umur)
 }
 
-func Kesembilan() {
+func (n siswa) Kesembilansapa() {
+	fmt.Println("halo saya", n.nama)
+	fmt.Println("umurnya", n.umur)
+}
 
+func (n siswa) Kesembilanlulus() {
+	fmt.Println(n.nama, "lulus")
+}
+
+func Kesembilanmethod() {
+	siswa1 := siswa{
+		nama : "budi",
+		umur: 17,
+	}
+
+	siswa1.Kesembilansapa()
+	siswa1.Kesembilanlulus()
 }
